@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YumScale</title>
+    
 </head>
 <body>
     <header>
         <img src="/Images/logo.svg" alt="#" width="100" height="30">
-        <div>
+        <nav>
             <ul>
-                <li>Про Нас</li>
-                <li>Що всередині</li>
-                <li>Як це працює</li>
-                <li>Плани харчування</li>
-                <li>Контакти</li>
+                <li><a href="#about">Про Нас</a></li>
+                <li><a href="">Що всередині</a></li>
+                <li><a href="">Як це працює</a></li>
+                <li><a href="">Плани харчування</a></li>
+                <li><a href="/details.html">Контакти</a></li>
             </ul>
-        </div>
+        </nav>
         <div>
-            <img src="/facebook-app-symbol.png" width="30" height="30" alt="#">
-            <img src="/instagram.png" alt="#" width="30" height="30">
-            <img src="/youtube.png" alt="#" width="30" height="30">
+            <a href="https://facebook.com"><img src="/facebook-app-symbol.png" width="30" height="30" alt="#"></a>
+            <a href="https://instagram.com"><img src="/instagram.png" alt="#" width="30" height="30"></a>
+            <a href="https://www.youtube.com/"><img src="/youtube.png" alt="#" width="30" height="30"></a>
         </div>
     </header>
 
@@ -89,8 +90,39 @@
 
         </article>
 
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="about__media">
+                    <img src="/Images/ChatGPT Image Jun 29, 2026, 12_52_19 PM.png" alt="№" class="about__image">
+                </div>
+
+                <div class="about__content">
+                    <span class="about__subtitle">Про нас</span>
+                    <h2 class="about__title">Просте приготування здорових страв щодня</h2>
+                    <p class="about__text">Ми — преміальний сервіс доставки харчування, створений, щоб позбавити вас стресу, пов'язаного зі здоровим харчуванням. Наша концепція ґрунтується на абсолютній простоті: 4 фірмові плани, кожен з яких розрахований на певну кількість калорій.</p>
+                    <ul class="about__features features-list">
+                        <div class="features-list__item">
+                            <span class="features-list__icon">✓</span>
+                            <span class="features-list__text">Розраховані калорії</span>
+                        </div>
+                        <div class="features-list__item">
+                            <span class="features-list__icon">✓</span>
+                            <span class="features-list__text">Інгредієнти преміум-класу</span>
+                        </div>
+                        <div class="features-list__item">
+                            <span class="features-list__icon">✓</span>
+                            <span class="features-list__text">Без приготування</span>
+                        </div>
+                    </ul>
+                    <p class="about__text">Ми щодня готуємо наші страви, використовуючи лише найсвіжіші та якісні місцеві інгредієнти, тож ви отримуєте ідеальний баланс нутрієнтів без жодних зусиль.</p>
+                    <div class="about__actions"><a href="#plans" class="about__btn btn btn--primary">Переглянути тарифи</a></div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+    </footer>
 </body>
 </html>
