@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="order-form">
+        <small>Контактна форма</small>
+        <h1>Готові розпочати? Забронюйте свій план</h1>
+        <p>Заповніть форму нижче, щоб зафіксувати свій раціон від шеф-кухаря.</p>
+        
+        <form action="#" method="POST" class="form">
+        
+            <div>
+                <label for="user-name">Ваше ім'я:</label><br>
+                <input type="text" id="user-name" name="user_name" placeholder="Your Name*" required>
+            </div>
+            <br>
+            <div>
+                <label for="user-phone">Номер телефону:</label><br>
+                <input type="tel" id="user-phone" name="user_phone" placeholder="Phone Number*" required>
+            </div>
+            <br>
+            <div>
+                <label for="user-email">Email:</label><br>
+                <input type="email" id="user-email" name="user_email" placeholder="Email*" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="nutrition-plan">Оберіть свій раціон:</label><br>
+                <select id="nutrition-plan" name="nutrition_plan" required>
+                    <option value="" disabled selected>Оберіть свій раціон</option>
+                    <option value="slimness">Стрункість — 1300 ккал</option>
+                    <option value="balance">Щоденний Баланс — 1600 ккал</option>
+                    <option value="energy">Заряд енергії — 1900 ккал</option>
+                    <option value="green">Зелена енергія — 1500 ккал</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="select-duration">Оберіть тривалість:</label><br>
+                <select id="select-duration" name="select_duration" required>
+                    <option value="" disabled selected>Оберіть тривалість:</option>
+                    <option value="1-week">1 тиждень (5 днів)</option>
+                    <option value="2-weeks">2 тижні (10 днів)</option>
+                    <option value="1-month">1 місяць (20 днів)</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <legend>Оберіть зручний час доставки:</legend>
+                <input type="radio" id="delivery-morning" name="delivery_time" value="morning" checked>
+                <label for="delivery-morning">Ранок (06:00 – 08:00)</label><br>
+
+                <input type="radio" id="delivery-day" name="delivery_time" value="day">
+                <label for="delivery-day">День (08:00 – 10:00)</label>
+            </div>
+            <br>
+
+
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Я погоджуюся з умовами обробки персональних даних та правилами доставки*</label>
+            </div>
+            <br>
+
+            <div>
+            <button type="submit">Замовити</button>
+            <button type="reset">Очистити</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
