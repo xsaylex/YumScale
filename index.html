@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YumScale</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -40,54 +41,106 @@
                 <img src="/Images/1.png" alt="Кошик з готовими стравами та свіжими продуктами" width="440" height="456" class="head__image">
                 </div>
             </div>
-            <div class="head__ration-card">
-                <article class="ration-card">
-                    <span class="ration-card__badge ration-card__badge--new">NEW</span>
-                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (1).png"  alt="Стрункість" class="ration-card__image">
-                    <div class="ration-card__body">
-                        <h3 class="ration-card__title">Стрункість</h3>
-                        <dl class="ration-card__details">
-                            <dd class="ration-card__calories">1300 ккал</dd>
-                            <dd class="ration-card__description">Високий вміст клітковини, нежирні білки, мінімум швидких вуглеводів.</dd>
-                        </dl>
+            <div class="ration-slider">
+                <div class="swiper mySwiper">
+                    <div class="head__ration-card swiper-wrapper">
+                        <article class="ration-card swiper-slide">
+                            <span class="ration-card__badge ration-card__badge--sale">SALE</span>
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (1).png" alt="Стрункість" class="ration-card__image">
+                            <div class="ration-card__body">
+                            <h3 class="ration-card__title">Стрункість</h3>
+                            <dl class="ration-card__details">
+                                <dd class="ration-card__calories">1300 ккал</dd>
+                                <dd class="ration-card__description">Високий вміст клітковини, нежирні білки, мінімум швидких вуглеводів.</dd>
+                            </dl>
+                            </div>
+                        </article>
+
+                        <article class="ration-card swiper-slide">
+                            <span class="ration-card__badge ration-card__badge--hit">ХІТ</span>
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (4).png" alt="Щоденний Баланс" class="ration-card__image">
+                            <div class="ration-card__body">
+                            <h3 class="ration-card__title">Щоденний Баланс</h3>
+                            <dl class="ration-card__details">
+                                <dd class="ration-card__calories">1600 ккал</dd>
+                                <dd class="ration-card__description">Збалансовані макронутрієнти для щоденного гарного самопочуття.</dd>
+                            </dl>
+                            </div>
+                        </article>
+
+                        <article class="ration-card swiper-slide">
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (3).png" alt="Заряд енергії" class="ration-card__image">
+                            <div class="ration-card__body">
+                            <h3 class="ration-card__title">Заряд енергії</h3>
+                            <dl class="ration-card__details">
+                                <dd class="ration-card__calories">1900 ккал</dd>
+                                <dd class="ration-card__description">Якісний білок, стабільна енергія на щодень.</dd>
+                            </dl>
+                            </div>
+                        </article>
+
+                        <article class="ration-card swiper-slide">
+                            <span class="ration-card__badge ration-card__badge--new">NEW</span>
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (2).png" alt="Зелена енергія" class="ration-card__image">
+                            <div class="ration-card__body">
+                            <h3 class="ration-card__title">Зелена енергія</h3>
+                            <dl class="ration-card__details">
+                                <dd class="ration-card__calories">1500 ккал</dd>
+                                <dd class="ration-card__description">Рослинне харчування з натуральними інгредієнтами.</dd>
+                            </dl>
+                            </div>
+                        </article>
+
+                        <article class="ration-card swiper-slide">
+                            <span class="ration-card__badge ration-card__badge--sale">SALE</span>
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (1).png" alt="Стрункість" class="ration-card__image">
+                            <div class="ration-card__body">
+                            <h3 class="ration-card__title">Стрункість</h3>
+                            <dl class="ration-card__details">
+                                <dd class="ration-card__calories">1300 ккал</dd>
+                                <dd class="ration-card__description">Високий вміст клітковини, нежирні білки, мінімум швидких вуглеводів.</dd>
+                            </dl>
+                            </div>
+                        </article>
+
+                        <article class="ration-card swiper-slide">
+                            <span class="ration-card__badge ration-card__badge--hit">ХІТ</span>
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (4).png" alt="Щоденний Баланс" class="ration-card__image">
+                            <div class="ration-card__body">
+                            <h3 class="ration-card__title">Щоденний Баланс</h3>
+                            <dl class="ration-card__details">
+                                <dd class="ration-card__calories">1600 ккал</dd>
+                                <dd class="ration-card__description">Збалансовані макронутрієнти для щоденного гарного самопочуття.</dd>
+                            </dl>
+                            </div>
+                        </article>
+
+                        <article class="ration-card swiper-slide">
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (3).png" alt="Заряд енергії" class="ration-card__image">
+                            <div class="ration-card__body">
+                            <h3 class="ration-card__title">Заряд енергії</h3>
+                            <dl class="ration-card__details">
+                                <dd class="ration-card__calories">1900 ккал</dd>
+                                <dd class="ration-card__description">Якісний білок, стабільна енергія на щодень.</dd>
+                                </dl>
+                            </div>
+                        </article>
+
+                        <article class="ration-card swiper-slide">
+                            <span class="ration-card__badge ration-card__badge--new">NEW</span>
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (2).png" alt="Зелена енергія" class="ration-card__image">
+                            <div class="ration-card__body">
+                                <h3 class="ration-card__title">Зелена енергія</h3>
+                                <dl class="ration-card__details">
+                                    <dd class="ration-card__calories">1500 ккал</dd>
+                                    <dd class="ration-card__description">Рослинне харчування з натуральними інгредієнтами.</dd>
+                                </dl>
+                            </div>
+                        </article>
                     </div>
-                </article>
-            
-                <article class="ration-card">
-                    <span class="ration-card__badge ration-card__badge--new">NEW</span>
-                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (4).png"  alt="Стрункість" class="ration-card__image">
-                    <div class="ration-card__body">
-                        <h3 class="ration-card__title">Щоденний Баланс</h3>
-                        <dl class="ration-card__details">
-                            <dd class="ration-card__calories">1600 ккал</dd>                        
-                            <dd class="ration-card__description">Збалансовані макронутрієнти для щоденного гарного самопочуття.</dd>
-                        </dl>
-                    </div>
-                </article>
-            
-                <article class="ration-card">
-                    <span class="ration-card__badge ration-card__badge--new">NEW</span>
-                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (3).png"  alt="Стрункість" class="ration-card__image">
-                    <div class="ration-card__body">
-                        <h3 class="ration-card__title">Заряд енергії</h3>
-                        <dl class="ration-card__details">
-                            <dd class="ration-card__calories">1900 ккал</dd>
-                            <dd class="ration-card__description">Якісний білок, стабільна енергія на щодень.</dd>
-                        </dl>
-                    </div>
-                </article>
-            
-                <article class="ration-card">
-                    <span class="ration-card__badge ration-card__badge--new">NEW</span>
-                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (2).png"  alt="Стрункість" class="ration-card__image">
-                    <div class="ration-card__body">
-                        <h3 class="ration-card__title">Зелена енергія</h3>
-                        <dl class="ration-card__details">
-                            <dd class="ration-card__calories">1500 ккал</dd>
-                            <dd class="ration-card__description">Рослинне харчування з натуральними інгредієнтами.</dd>
-                        </dl>
-                    </div>
-                </article>
+                </div>
+                <div class="swiper-button-prev ration-slider__prev"></div>
+                <div class="swiper-button-next ration-slider__next"></div>
             </div>
         </section>
 
@@ -204,9 +257,89 @@
 
     </main>
 
-    <footer>
+    <section class="gallery" id="inside">
+        <div class="gallery__container">
+            <h2 class="gallery__title">Наші страви</h2>
         
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--large">
+                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (1).png" alt="Страва 1" class="gallery__image">
+                </div>
+                <div class="gallery__item">
+                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (4).png" alt="Страва 2" class="gallery__image">
+                </div>
+                <div class="gallery__item">
+                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (3).png" alt="Страва 3" class="gallery__image">
+                </div>
+                <div class="gallery__item gallery__item--wide">
+                    <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (2).png" alt="Страва 4" class="gallery__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--brand">
+                <a href="#" class="footer__logo"><img src="/Images/logo.svg" alt="YumScale" width="120" height="36"></a>
+                <p class="footer__description">Щоденна доставка свіжих страв, що допоможе вам харчуватися краще, заощаджувати час і насолоджуватися здоровим способом життя.</p>
+                <div class="footer__socials">
+                    <a href="https://facebook.com" class="footer__social-link" aria-label="Facebook">
+                    <img src="/facebook-app-symbol.png" width="32" height="32" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram">
+                    <img src="/instagram.png" width="32" height="32" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/" class="footer__social-link" aria-label="YouTube">
+                    <img src="/youtube.png" width="32" height="32" alt="YouTube">
+                    </a>
+                </div>
+                </div>
+                <div class="footer__col">
+                <h3 class="footer__title">Компанія</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#about" class="footer__link">Про нас</a></li>
+                    <li class="footer__item"><a href="#inside" class="footer__link">Що всередині</a></li>
+                    <li class="footer__item"><a href="#how" class="footer__link">Як це працює</a></li>
+                    <li class="footer__item"><a href="#plans" class="footer__link">Meal Plans</a></li>
+                </ul>
+                </div>
+                <div class="footer__col">
+                <h3 class="footer__title">Навігація</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#prices" class="footer__link">Ціни</a></li>
+                    <li class="footer__item"><a href="#features" class="footer__link">Особливості</a></li>
+                    <li class="footer__item"><a href="/details.html" class="footer__link">Зв'яжіться з нами</a></li>
+                </ul>
+                </div>
+                <div class="footer__col footer__col--contacts">
+                <div class="footer__contact-group">
+                    <h3 class="footer__title footer__title--no-line">Адреса</h3>
+                    <p class="footer__text">Головний офіс у Лондоні — вул. Ріджент, 36.</p>
+                </div>
+    
+                <div class="footer__contact-group">
+                    <h3 class="footer__title footer__title--no-line">Номер телефону</h3>
+                    <a href="tel:+12345678900" class="footer__link">+1 (234) 567 89 00</a>
+                </div>
+    
+                <div class="footer__contact-group">
+                    <h3 class="footer__title footer__title--no-line">Е-пошта</h3>
+                    <a href="mailto:yumscale@email.com" class="footer__link">yumscale@email.com</a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy footer__copy--left">© Created by</span>
+                <span class="footer__copy footer__copy--center">YumScale</span>
+                <span class="footer__copy footer__copy--right">All rights Reserved</span>
+            </div>
+        </div>
     </footer>
     <a href="#" class="back-to-top">↑</a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

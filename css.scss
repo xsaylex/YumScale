@@ -131,6 +131,150 @@ header div a img:hover {
     max-width: 550px;
 }
 
+
+.ration-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1260px;
+    margin: -30px auto 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.swiper.mySwiper {
+    width: 100%;
+    padding: 16px 0 24px 0;
+    overflow: hidden;
+}
+
+.head__ration-card.swiper-wrapper {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: stretch;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.ration-card.swiper-slide {
+    position: relative;
+    height: auto;
+    min-height: 225px; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #e5e4df; 
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+    box-sizing: border-box;
+}
+
+.ration-card__badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    background-color: #e50914;
+    box-shadow: 0 4px 10px rgba(224, 12, 12, 0.2);
+    z-index: 5;
+}
+
+.ration-card__badge--hit {
+    background-color: #7cb342;
+}
+
+.ration-card__badge--new {
+    background-color: #36383e;
+}
+
+
+.ration-card__image {
+    width: 10px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.08)); 
+}
+
+.ration-card__body {
+    padding-top: 4px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.ration-card__title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #222222;
+    letter-spacing: -0.3px;
+    margin: 0 0 6px 0;
+}
+
+.ration-card__calories {
+    font-size: 14px;
+    font-weight: 800;
+    color: #82b440; 
+    margin: 0 0 18px 0;
+}
+
+.ration-card__description {
+    font-weight: 400;
+    font-size: 13.5px;
+    color: #7a7a7a;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.ration-slider__prev,
+.ration-slider__next {
+    color: #666666 !important;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    margin-top: -18px;
+}
+
+.ration-slider__prev::after,
+.ration-slider__next::after {
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+.ration-slider__prev {
+    left: 5px;
+}
+
+.ration-slider__next {
+    right: 5px;
+}
+
+.ration-slider__prev:hover,
+.ration-slider__next:hover {
+    color: #7cb342;
+}
+
+
+
+
+
+
 .head__title {
     font-size: 52px;
     font-weight: 800;
@@ -414,4 +558,218 @@ header div a img:hover {
 
 .btn--primary:hover {
     background-color: #e0444c;
+}
+
+/*----------------------------------Griid Gallery------------------*/
+
+.gallery {
+    padding: 60px 0;
+    background-color: #f8f7f2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gallery__title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 16px;
+}
+
+.gallery__item {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+.gallery__item--large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.gallery__item--wide {
+    grid-column: span 2;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/*-------------------------Footer--------------------------------*/
+
+.footer {
+    background-color: #36383e; 
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 70px 0 30px 0;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.2fr; 
+    gap: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12); 
+}
+
+.footer__logo {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+}
+
+.footer__logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 36px;
+    height: 3px;
+    background-color: #e50914; 
+}
+
+.footer__logo img {
+    display: block;
+}
+
+.footer__description {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: #d1d3d8;
+    margin: 0 0 24px 0;
+    max-width: 260px;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__social-link img {
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer__social-link:hover img {
+    opacity: 0.9;
+}
+
+.footer__title {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 14px;
+    margin: 0 0 20px 0;
+}
+
+.footer__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 36px;
+    height: 3px;
+    background-color: #e50914;
+}
+
+.footer__title--no-line {
+    padding-bottom: 0;
+    margin-bottom: 8px;
+}
+
+.footer__title--no-line::after {
+    display: none;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    margin-bottom: 14px;
+}
+
+.footer__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__link {
+    color: #d1d3d8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+    color: #8bc34a; 
+}
+
+.footer__contact-group {
+    margin-bottom: 22px;
+}
+
+.footer__contact-group:last-child {
+    margin-bottom: 0;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d1d3d8;
+    margin: 0;
+}
+
+.footer__bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 24px;
+    font-size: 13px;
+    color: #d1d3d8;
+}
+
+.footer__copy--left {
+    justify-self: start;
+}
+
+.footer__copy--center {
+    justify-self: center;
+    font-weight: 500;
+}
+
+.footer__copy--right {
+    justify-self: end;
 }
