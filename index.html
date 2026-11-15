@@ -9,20 +9,41 @@
 </head>
 <body>
     <header>
-        <img src="/Images/logo.svg" alt="#" width="100" height="30">
-        <nav>
-            <ul>
-                <li><a href="#about">Про Нас</a></li>
-                <li><a href="">Що всередині</a></li>
-                <li><a href="">Як це працює</a></li>
-                <li><a href="">Плани харчування</a></li>
-                <li><a href="/details.html">Контакти</a></li>
-            </ul>
+        <button class="hamburger" aria-label="Меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="mobile-menu">
+            <div class="mobile-menu__socials">
+                <a href="https://facebook.com"><img src="/facebook-app-symbol.png" width="30" height="30" alt="#"></a>
+                <a href="https://instagram.com"><img src="/instagram.png" alt="#" width="30" height="30"></a>
+                <a href="https://www.youtube.com/"><img src="/youtube.png" alt="#" width="30" height="30"></a>
+            </div>
+            <a href="#">Про Нас</a>
+            <a href="#">Що всередині</a>
+            <a href="#">Як це працює</a>
+            <a href="#">Плани харчування</a>
+            <a href="#">Контакти</a>
         </nav>
-        <div>
-            <a href="https://facebook.com"><img src="/facebook-app-symbol.png" width="30" height="30" alt="#"></a>
-            <a href="https://instagram.com"><img src="/instagram.png" alt="#" width="30" height="30"></a>
-            <a href="https://www.youtube.com/"><img src="/youtube.png" alt="#" width="30" height="30"></a>
+
+        <div class="main-menu">
+            <img src="/Images/logo.svg" alt="#" width="100" height="30">
+            <nav>
+                <ul>
+                    <li><a href="#about">Про Нас</a></li>
+                    <li><a href="">Що всередині</a></li>
+                    <li><a href="">Як це працює</a></li>
+                    <li><a href="">Плани харчування</a></li>
+                    <li><a href="/details.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="main-menu__socials">
+                <a href="https://facebook.com"><img src="/facebook-app-symbol.png" width="30" height="30" alt="#"></a>
+                <a href="https://instagram.com"><img src="/instagram.png" alt="#" width="30" height="30"></a>
+                <a href="https://www.youtube.com/"><img src="/youtube.png" alt="#" width="30" height="30"></a>
+            </div>
         </div>
     </header>
 
@@ -338,6 +359,9 @@
             </div>
         </div>
     </footer>
+    <div class="scroll-down">
+        <span>↓</span>
+    </div>
     <a href="#" class="back-to-top">↑</a>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

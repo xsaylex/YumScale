@@ -1,7 +1,8 @@
 const swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 24,
-    slidesPerView: 3, 
+    slidesPerView: 3,
+    watchSlidesProgress: true,
 
 breakpoints: {
     320: {
@@ -24,4 +25,16 @@ autoplay: {
     delay: 3500,
     disableOnInteraction: false,
 },
+});
+
+
+
+
+
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 });
