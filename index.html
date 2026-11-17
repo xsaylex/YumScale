@@ -195,86 +195,141 @@
             </div>
         </section>
 
-        <section class="plans">
-            <div class="plans__container">
+    <section class="plans" id="plans">
+        <div class="plans__container">
+            <header class="plans__header">
+                <span class="plans__subtitle">НАШІ ПЛАНИ ХАРЧУВАННЯ</span>
+                <h2 class="plans__title">Оберіть свою ціль. Про решту подбаємо ми.</h2>
+                <p class="plans__description">Чотири прості плани, розроблені шеф-кухарем</p>
+            </header>
 
-                <header class="plans__header">
-                    <span class="plans__subtitle">НАШІ ПЛАНИ ХАРЧУВАННЯ</span>
-                    <h2 class="plans__title">Оберіть свою ціль. Про решту подбаємо ми.</h2>
-                    <p class="plans__description">Чотири прості плани, розроблені шеф-кухарем</p>
-                </header>
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="plan-1300" type="button">
+                    Стрункість — <span>1300 kcal</span>
+                </button>
+                <button class="tab-btn" data-tab="plan-1600" type="button">
+                    Щоденний баланс — <span>1600 kcal</span>
+                </button>
+                <button class="tab-btn" data-tab="plan-1900" type="button">
+                    Заряд енергії — <span>1900 kcal</span>
+                </button>
+                <button class="tab-btn" data-tab="plan-1500" type="button">
+                    Зелена енергія — <span>1500 kcal</span>
+                </button>
+            </div>
 
-                <ul class="plans__tabs tabs-menu">
-                    <li class="tabs-menu__item">
-                        <button class="tabs-menu__btn tabs-menu__btn--active" type="button">Стрункість — <strong>1300 kcal</strong></button>
-                    </li>
-                    <li class="tabs-menu__item">
-                        <button class="tabs-menu__btn" type="button">Щоденний баланс — <strong>1600 kcal</strong></button>
-                    </li>
-                    <li class="tabs-menu__item">
-                        <button class="tabs-menu__btn" type="button">Заряд енергії — <strong>1900 kcal</strong></button>
-                    </li>
-                    <li class="tabs-menu__item">
-                        <button class="tabs-menu__btn" type="button">Зелена енергія — <strong>1500 kcal</strong></button>
-                    </li>
-                </ul>
+            <div class="tabs-body">
 
-                <div class="plans__content plan-details">
-                
-                    <div class="plan-details__media">
-                        <img src="/Images/meal1.png" alt="Раціон Slim & Sculpt 1300 kcal" class="plan-details__image">
-                    </div>
-                
-                    <div class="plan-details__info">
-                        <h3 class="plan-details__title">The Weight Loss Champion</h3>
-                        <p class="plan-details__text">Розроблено спеціально для безпечного й ефективного зниження ваги та зменшення кількості жиру в організмі без стресу.</p>
-                        <h4 class="plan-details__menu-title">Приклад Меню</h4>
-                    
-                        <ul class="nested-menu">
-                            <ol class="nested-menu__sublist">
 
-                                <li class="nested-menu__item nested-menu__item--level-2">
-                                    <span class="nested-menu__meal-title"> / Сніданок (310 ккал)</span>
-                                    <ul class="nested-menu__dish-list">
-                                        <li class="nested-menu__dish-item">Фритата зі шпинатом і козячим сиром</li>
-                                        <li class="nested-menu__dish-item">Помідори чері та скибочки хрусткого огірка</li>
-                                    </ul>
-                                </li>
-                            
-                                <li class="nested-menu__item nested-menu__item--level-2">
-                                    <span class="nested-menu__meal-title"> / Ранковий перекус (120 ккал)</span>
-                                    <ul class="nested-menu__dish-list">
-                                        <li class="nested-menu__dish-item">Грецький йогурт власного приготування без цукру зі свіжою лісовою чорницею</li>
-                                    </ul>
-                                </li>
-                            
-                                <li class="nested-menu__item nested-menu__item--level-2">
-                                    <span class="nested-menu__meal-title"> / Обід (420 ккал)</span>
-                                    <ul class="nested-menu__dish-list">
-                                        <li class="nested-menu__dish-item">Запечене в духовці куряче філе з лимоном і травами</li>
-                                        <li class="nested-menu__dish-item">Легкий салат із кіноа та броколі на парі</li>
-                                    </ul>
-                                </li>
-                            
-                                <li class="nested-menu__item nested-menu__item--level-2">
-                                    <span class="nested-menu__meal-title"> / Полуденок (150 ккал)</span>
-                                    <ul class="nested-menu__dish-list">
-                                        <li class="nested-menu__dish-item">Сирники, запечені в аерофритюрниці, з малиновим кулі без цукру</li>
-                                    </ul>
-                                </li>
-                            
-                                <li class="nested-menu__item nested-menu__item--level-2">
-                                    <span class="nested-menu__meal-title"> / Вечеря (300 ккал)</span>
-                                    <ul class="nested-menu__dish-list">
-                                        <li class="nested-menu__dish-item">Філе середземноморського сібаса на "подушці" зі свіжої рукколи, авокадо та зеленої спаржі</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </ul>
+                <div id="plan-1300" class="tab-content active">
+                    <div class="plan-details">
+                        <div class="plan-details__media">
+                            <img src="/Images/meal1.png" alt="Стрункість 1300 kcal" class="plan-details__image">
+                        </div>
+                        <div class="plan-details__info">
+                            <h3 class="plan-details__title">Стрункість</h3>
+                            <p class="plan-details__macros">
+                                <strong>Розподіл макронутрієнтів:</strong> 35% білків / 35% вуглеводів / 30% жирів
+                            </p>
+                            <p class="plan-details__text">
+                                Розроблено спеціально для безпечного й ефективного зниження ваги та зменшення кількості жиру в організмі без стресу, пов'язаного з постійним підрахунком калорій.
+                            </p>
+                            <details class="plan-details__accordion">
+                                <summary>Приклад Меню</summary>
+                                <ul class="plan-details__menu-list">
+                                    <li><strong>Сніданок (310 ккал):</strong> Фритата зі шпинатом і козячим сиром, помідори чері</li>
+                                    <li><strong>Перекус (120 ккал):</strong> Грецький йогурт без цукру зі свіжою чорницею</li>
+                                    <li><strong>Обід (420 ккал):</strong> Запечене куряче філе з лимоном, кіноа та броколі</li>
+                                    <li><strong>Полуденок (150 ккал):</strong> Сирники в аерофритюрниці з малиновим кулі</li>
+                                    <li><strong>Вечеря (300 ккал):</strong> Філе сібаса на подушці з руколи, авокадо та спаржі</li>
+                                </ul>
+                            </details>
+                            <a href="#prices" class="btn btn--primary">Дивитися тарифи</a>
+                        </div>
                     </div>
                 </div>
+
+                <div id="plan-1600" class="tab-content">
+                    <div class="plan-details">
+                        <div class="plan-details__media">
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (4).png" alt="Щоденний баланс 1600 kcal" class="plan-details__image">
+                        </div>
+                        <div class="plan-details__info">
+                            <h3 class="plan-details__title">Щоденний баланс</h3>
+                            <p class="plan-details__macros">
+                                <strong>Розподіл макронутрієнтів:</strong> 30% білків / 45% вуглеводів / 25% жирів
+                            </p>
+                            <p class="plan-details__text">
+                                Ідеальний вибір для підтримки поточної ваги, стабільного рівня енергії протягом усього робочого дня та комфортного самопочуття.
+                            </p>
+                            <details class="plan-details__accordion">
+                                <summary>Приклад Меню</summary>
+                                <ul class="plan-details__menu-list">
+                                    <li><strong>Сніданок (400 ккал):</strong> Вівсянка на мигдалевому молоці з горіхами та ягодами</li>
+                                    <li><strong>Обід (550 ккал):</strong> Індичка су-від з булгуром та запеченими овочами</li>
+                                    <li><strong>Вечеря (450 ккал):</strong> Лосось на грилі з зеленим салатом та кунжутною заправкою</li>
+                                </ul>
+                            </details>
+                            <a href="#prices" class="btn btn--primary">Дивитися тарифи</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="plan-1900" class="tab-content">
+                    <div class="plan-details">
+                        <div class="plan-details__media">
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_59 AM (3).png" alt="Заряд енергії 1900 kcal" class="plan-details__image">
+                        </div>
+                        <div class="plan-details__info">
+                            <h3 class="plan-details__title">Заряд енергії</h3>
+                            <p class="plan-details__macros">
+                                <strong>Розподіл макронутрієнтів:</strong> 35% білків / 45% вуглеводів / 20% жирів
+                            </p>
+                            <p class="plan-details__text">
+                                Підвищений вміст якісного білка та складних вуглеводів для активних людей, регулярних тренувань та швидкого відновлення.
+                            </p>
+                            <details class="plan-details__accordion">
+                                <summary>Приклад Меню</summary>
+                                <ul class="plan-details__menu-list">
+                                    <li><strong>Сніданок (480 ккал):</strong> Омлет з трьох яєць з лососем та цільнозерновим тостом</li>
+                                    <li><strong>Обід (680 ккал):</strong> Яловичина теріякі з бурим рисом та бобами едамаме</li>
+                                    <li><strong>Вечеря (520 ккал):</strong> Куряча грудка з бататом та теплим салатом</li>
+                                </ul>
+                            </details>
+                            <a href="#prices" class="btn btn--primary">Дивитися тарифи</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="plan-1500" class="tab-content">
+                    <div class="plan-details">
+                        <div class="plan-details__media">
+                            <img src="/Images/ChatGPT Image Jun 30, 2026, 11_27_58 AM (2).png" alt="Зелена енергія 1500 kcal" class="plan-details__image">
+                        </div>
+                        <div class="plan-details__info">
+                            <h3 class="plan-details__title">Зелена енергія</h3>
+                            <p class="plan-details__macros">
+                                <strong>Розподіл макронутрієнтів:</strong> 25% білків / 50% вуглеводів / 25% жирів
+                            </p>
+                            <p class="plan-details__text">
+                                100% рослинний раціон на основі бобових, кіноа, авокадо та сезонних овочів для легкості та очищення організму.
+                            </p>
+                            <details class="plan-details__accordion">
+                                <summary>Приклад Меню</summary>
+                                <ul class="plan-details__menu-list">
+                                    <li><strong>Сніданок (380 ккал):</strong> Чіа-пудинг на кокосовому молоці з манго</li>
+                                    <li><strong>Обід (520 ккал):</strong> Боул з нутом, кіноа, авокадо та соусом тахіні</li>
+                                    <li><strong>Вечеря (420 ккал):</strong> Крем-суп із сочевиці та салат з тофу</li>
+                                </ul>
+                            </details>
+                            <a href="#prices" class="btn btn--primary">Дивитися тарифи</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
     </main>
 
@@ -361,6 +416,43 @@
     </footer>
     <div class="scroll-down">
         <span>↓</span>
+    </div>
+    
+    <div class="order-modal" id="my-modal" aria-hidden="true">
+        <button class="order-modal__close close-modal" id="closeOrderModal" aria-label="Закрити форму">✕</button>
+        <div class="order-modal__dialog">
+            <span class="order-modal__subtitle">CONTACT FORM</span>
+            <h2 class="order-modal__title">Ready to Start?<br>Secure Your Plan</h2>
+            <p class="order-modal__description">Fill out the form below to lock in your chef-crafted nutrition.</p>
+
+            <form class="order-modal__form" id="orderForm">
+                <input type="text" class="order-modal__input" name="name" placeholder="Your Name*" required>
+                <input type="tel" class="order-modal__input" name="phone" placeholder="Phone Number*" required>
+                <input type="email" class="order-modal__input" name="email" placeholder="Email*" required>
+
+                <div class="order-modal__select-wrap">
+                    <select class="order-modal__select" name="nutrition" required>
+                        <option value="" disabled selected>Choose Your Nutrition</option>
+                        <option value="1300">Стрункість — 1300 kcal</option>
+                        <option value="1600">Щоденний баланс — 1600 kcal</option>
+                        <option value="1900">Заряд енергії — 1900 kcal</option>
+                        <option value="1500">Зелена енергія — 1500 kcal</option>
+                    </select>
+                </div>
+
+                <div class="order-modal__select-wrap">
+                    <select class="order-modal__select" name="duration" required>
+                        <option value="" disabled selected>Select Duration</option>
+                        <option value="trial">Trial — 3 Days</option>
+                        <option value="week">1 Week (7 Days)</option>
+                        <option value="two-weeks">2 Weeks (14 Days)</option>
+                        <option value="month">1 Month (30 Days)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="order-modal__submit">Order Now</button>
+            </form>
+        </div>
     </div>
     <a href="#" class="back-to-top">↑</a>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
